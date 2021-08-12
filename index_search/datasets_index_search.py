@@ -76,3 +76,8 @@ scores, retrieved_examples = my_dataset.get_nearest_examples("text", "esqueixada
 
 for i in range(0, K):
     print(f'({i+1}) @{scores[i]:.2f} - {retrieved_examples["id"][i]} => {retrieved_examples["text"][i]} \n')
+
+
+# test a dummy update
+my_dataset.update_elasticsearch_documents(es_index_name="big_science_oscar_unshuffled_original_ca"
+
